@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding:  0;
+    margin: 0;
+}
+
+.AboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.About-p{
+    width: 45rem;
+    color: black;
+    padding-top: 3%;
+    text-align: left;
+}
+
+.about-image{
+    width: 20rem;
+}
+

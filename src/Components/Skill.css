@@ -1,0 +1,78 @@
+
+.SkillCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .skillCard {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .cardInner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .skillCard:hover .cardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .cardFront,
+  .cardBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .cardFront {
+    background-color: #333;
+    color: whitesmoke;
+  }
+  
+  .cardFront .icon {
+    font-size: 40px;
+    color: #007acc;
+  }
+  
+  .cardFront .skillName {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ccff;
+  }
+  
+ 
+  .cardBack {
+    background-color: #444;
+    color: whitesmoke;
+    transform: rotateY(180deg);
+  }
+  
+  .cardBack .skillLevel,
+  .cardBack .skillDescription {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
