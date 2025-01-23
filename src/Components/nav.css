@@ -1,66 +1,72 @@
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #2C3E50;
-    color: white;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar__logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navbar__links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navbar__link {
-    margin-left: 20px;
-  }
-  
-  .navbar__link a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .navbar__link a:hover {
-    color: #3498db;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #2C3E50;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .Nav-logo-image{
-    height:120px ;
-    width:200px ;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .navbar {
+.Nav-logo-image {
+  height: 80px;
+  width: auto;
+}
+
+.navbar__links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__link a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.navbar__link a:hover {
+  color: #3498db;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
       flex-direction: column;
       align-items: flex-start;
-    }
-  
-    .navbar__logo {
-      margin-bottom: 20px;
-    }
-  
-    .navbar__links {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .navbar__link {
-      margin: 10px 0;
-    }
+      padding: 20px;
   }
-  
+
+  .Nav-logo-image {
+      margin-bottom: 20px;
+  }
+
+  .navbar__links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+  }
+
+  .navbar__link a {
+      font-size: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 10px;
+  }
+
+  .Nav-logo-image {
+      height: 60px;
+  }
+
+  .navbar__link a {
+      font-size: 16px;
+  }
+}

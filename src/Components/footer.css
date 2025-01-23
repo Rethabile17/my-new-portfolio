@@ -1,58 +1,135 @@
 .footer {
-    background-color: gray;
-    color: #ffffff;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: left;
-    font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 2rem; 
+  padding: 20px;
+  background-color: #2C3E50;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-.footer-logo-image {
-    width: 200px;
-    height: 200px;
+.footer-logo img {
+  height: 130px;
+  width: 200px;
+  border-radius: 10px;
 }
 
-.footerPage, .footer-contact, .footer-location {
-    margin: 2rem;
-   
+.footer-logo p {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
 }
 
-.footer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #007acc;
-    border-bottom: 2px solid#ffffff;
-    display: inline-block;
-    padding-bottom: 0.25rem;
-}
-
-.footer p, .footer a {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-    line-height: 1.6;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #007acc;
-    text-decoration: underline;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.footer-contact,
+.footer-location,
+.footer-email {
+  max-width: 300px;
+  text-align: center; 
 }
 
 .footer-links a {
-    font-size: 1rem;
-    color: #ffffff;
+  display: flex;
+  align-items: center;
+  color: #3498db;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .footer-links a:hover {
-    color: darkblue;
+  text-decoration: underline;
+}
+
+.footer-links a svg {
+  margin-right: 5px;
+}
+
+.footer-email form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.footer-email input,
+.footer-email textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.footer-email button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-email button:hover {
+  background-color: #1abc9c;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    justify-content: space-around; 
+  }
+
+  .footer-logo img {
+    height: 100px;
+    width: 150px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-email input,
+  .footer-email textarea {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+  }
+
+  .footer-logo img {
+    height: 80px;
+    width: 120px;
+  }
+
+  .footer-contact,
+  .footer-location,
+  .footer-email {
+    max-width: 100%; 
+    padding: 10px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+
+  .footer-email input,
+  .footer-email textarea {
+    font-size: 12px;
+  }
+
+  .footer-email button {
+    font-size: 12px;
+  }
 }
