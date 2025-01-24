@@ -62,7 +62,7 @@ function Skill() {
   ];
 
   return (
-    <div className="SkillCardContainer">
+    <div className="SkillCardContainer" id='skills'>
       {techSkills.map((tech, index) => (
         <div className="skillCard" key={index}>
           <div className="cardInner">

@@ -69,7 +69,7 @@ function Projects() {
   );
 
   return (
-    <div className="projectsContainer">
+    <div className="projectsContainer" id="projects">
       <h2 className="projectsTitle">My Projects</h2>
 
     

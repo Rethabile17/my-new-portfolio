@@ -40,11 +40,11 @@ function Footer() {
   };
 
   return (
-    <div className="footer">
+    <div className="footer" id='contact'>
       <div className="footer-logo">
         <img className="footer-logo-image" src={ImageName} alt="Logo" />
         <p>
-          <FontAwesomeIcon icon={faCopyright} /> All Rights Reserved 2025
+          <FontAwesomeIcon icon={faCopyright} />2025 All Rights Reserved 
         </p>
       </div>
 
@@ -54,10 +54,10 @@ function Footer() {
         <p>Phone: +27 68210 4225</p>
         <div className="footer-links">
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+            <FontAwesomeIcon icon={faLinkedin} /> 
           </a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} /> GitHub
+            <FontAwesomeIcon icon={faGithub} /> 
           </a>
         </div>
       </div>
